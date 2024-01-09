@@ -1,3 +1,6 @@
+Dummy Credential
+Email: ropstam@yopmail.com
+pass: cFkuVD
 Create .env file at root leavel & replace the keys that I provide you on gmail
 
 <!-- Project Setup Backend-->
@@ -20,6 +23,7 @@ Implement UI(tailwind CSS) for user authentication using forms & validation via 
 Connect these forms to backend endpoints for authentication and user creation.
 
 After signup you can check your email or also backend clgs for password.
+Kindly add SEND_GRID_API_KEY for testing otherwise check clg for password
 Usually that password is one time by using you have to create own password but currently not implemented that feat not part of requirements.
 
 Dashboard:
