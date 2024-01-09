@@ -10,14 +10,17 @@ npm run dev
 <!-- CMD -->
 
 cd frontend
-npm install
+npm install || npm install --legacy-peer-deps
 npm run dev
 
 Frontend:
 
 Sign-in & Sign-up Page:
-Implement UI for user authentication using forms & validation via formik.
+Implement UI(tailwind CSS) for user authentication using forms & validation via formik.
 Connect these forms to backend endpoints for authentication and user creation.
+
+After signup you can check your email or also backend clgs for password.
+Usually that password is one time by using you have to create own password but currently not implemented that feat not part of requirements.
 
 Dashboard:
 Design a simple dashboard displaying the count of registered Cars & Categories.
@@ -33,7 +36,7 @@ Data Tables for Sorting & Pagination:
 Use libraries like DataTables to display data in tables with sorting and pagination handle via Backend.
 
 API Calling:
-Using RTK Query with Toolkit for fetching data & performinh operation on data.
+Using RTK Query with Toolkit for fetching data & performing operation on data.
 
 Backend:
 User Authentication:

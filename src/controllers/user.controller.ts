@@ -29,11 +29,13 @@ export const signUp = async (
   user.password = await getEncryptedPassword(randomPassword);
   await user.save();
   user.password = undefined;
-  let emailBody =
-    "Wellcome to our platform. Your pin to retrive your account is <b>" +
-    randomPassword +
-    "</b>. Don't share it with anyone.";
-  await sendMail("WellCome Email", emailBody, email);
+  if (process.env.SEND_GRID_API_KEY) {
+    let emailBody =
+      "Wellcome to our platform. Your pin to retrive your account is <b>" +
+      randomPassword +
+      "</b>. Don't share it with anyone.";
+    await sendMail("WellCome Email", emailBody, email);
+  }
   response = new HTTPResponse("Signed up successfully", { user });
   return res.status(StatusCodes.CREATED).json(response);
 };
