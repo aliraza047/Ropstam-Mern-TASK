@@ -32,6 +32,8 @@ Implement forms for creating, reading, updating, and deleting categories and car
 Implement dropdowns, input fields, and validation for car & categories details.
 Each User have their own Categories & Cars.
 
+Suggestions: On Deleted Categories you can also delete Car created with that Category
+
 Data Tables for Sorting & Pagination:
 Use libraries like DataTables to display data in tables with sorting and pagination handle via Backend.
 
